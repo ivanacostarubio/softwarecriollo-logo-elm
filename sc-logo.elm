@@ -73,7 +73,7 @@ p8 =
 
 renderPoint : Point -> Svg d
 renderPoint p =
-    Svg.circle [ cx (toString p.x), cy (toString p.y), r "2", fill "#black" ] []
+    Svg.circle [ cx (toString p.x), cy (toString p.y), r "3", fill "#black" ] []
 
 
 renderPoints : List (Svg a)
@@ -83,7 +83,7 @@ renderPoints =
 
 drawLine : Point -> Point -> Svg a
 drawLine p1 p2 =
-    Svg.line [ x1 (toString p1.x), y1 (toString p1.y), x2 (toString p2.x), y2 (toString p2.y), Svg.Attributes.style "stroke:rgb(0,0,0);stroke-width:4" ] []
+    Svg.line [ x1 (toString p1.x), y1 (toString p1.y), x2 (toString p2.x), y2 (toString p2.y), Svg.Attributes.style "stroke:rgb(0,0,0);stroke-width:6" ] []
 
 
 drawLines : List (Svg a)

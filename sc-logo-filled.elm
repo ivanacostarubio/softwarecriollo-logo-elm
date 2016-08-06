@@ -74,7 +74,7 @@ p8 =
 
 drawLine : Point -> Point -> Svg a
 drawLine p1 p2 =
-    Svg.line [ x1 (toString p1.x), y1 (toString p1.y), x2 (toString p2.x), y2 (toString p2.y), Svg.Attributes.style "stroke:rgb(255,255,255);stroke-width:4" ] []
+    Svg.line [ x1 (toString p1.x), y1 (toString p1.y), x2 (toString p2.x), y2 (toString p2.y), Svg.Attributes.style "stroke:rgb(255,255,255);stroke-width:6" ] []
 
 
 pointAsString : Point -> String
